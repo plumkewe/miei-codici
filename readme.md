@@ -1,4 +1,4 @@
-#Hey :wave:,
+# Hey :wave:,
 
 Ho deciso che **pubblicherò** i miei codici man mano che li scrivo su **GitHub**.
 
