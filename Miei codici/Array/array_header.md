@@ -1,10 +1,15 @@
 # Header / per array,
 
-###### qui troverai **header** e le funzioni che utilizzo per lavorare con gli *array*, ogni **header** avrà presente un link per visualizzare tutte le funzionalità comprese (C++ reference)
+###### qui troverai **header** e le funzioni che utilizzo per lavorare con gli *array*, ogni **header** avrà presente un link per visualizzare tutte le funzionalità comprese (C++ reference). Prima di partire ce da specificare che la maggior parte delle funzionalità presenti si riferiscono agli **array** veri e propri detti anche contenitori.
 
-###### **Incide**: <br /> 
+> Array container is a sequential homogenous container and is of a fixed size. Actually, in programming, we rarely use such a static container as in real-time scenarios we need containers that can expand or shrink dynamically. <br />
 
-- [Alghorithm](#Alghorithm) <br /> 
+# da quel che ho capito sono stato scamMmMmato a scuola, infatti gli array veri e propri non hanno nulla a che fare con array che si studiano a scuola quelli sono i vettori.
+
+
+###### **Incide**: <br />
+
+- [Alghorithm](#Alghorithm) <br />
 - [Array](#Array)
 
 
@@ -12,7 +17,7 @@
 
 Alghorithm è un **header** molto utile da diversi punti di vista ed è in grado di salvare molto tempo... un avviso importante per poter utilizzare i codici qui di sotto si consiglia di includere anche **header** 'array'.
 
-###### [:paperclip: C++ reference](https://en.cppreference.com/w/cpp/header/algorithm)
+###### [:pencil2: C++ reference](https://en.cppreference.com/w/cpp/header/algorithm)
 
 ### sort cre
 
@@ -69,11 +74,26 @@ accumulate(nome_del_array.begin(), nome_del_array.end(), da_dove_deve_calcolare)
 
 ## Array
 
-###### begin
+### begin
 
-###### end
+```cpp
 
-###### size
+```
+
+### end
+
+```cpp
+
+```
+
+### size
+
+È una funzionalità in grado di sostituire il classico sizeof() ma... con un grande ma, anche questa funziona solo con i contenitori. Ovviamente potete assegnare il valore ad una variabile ad vostro piacere (solitamente di tipo int)
+
+```cpp
+nome_del_array.size();
+```
+
 
 
 	
