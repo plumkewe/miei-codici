@@ -13,9 +13,10 @@
 - [Array](#Array)
 
 
+
 ## Alghorithm
 
-Alghorithm è un **header** molto utile da diversi punti di vista ed è in grado di salvare molto tempo... un avviso importante per poter utilizzare i codici qui di sotto si consiglia di includere anche **header** 'array'.
+Alghorithm è un **header** molto utile da diversi punti di vista ed è in grado di salvare molto tempo... un avviso importante per poter utilizzare i codici qui di sotto si consiglia di includere anche **header** 'array'
 
 ###### [:pencil2: C++ reference](https://en.cppreference.com/w/cpp/header/algorithm)
 
@@ -26,6 +27,7 @@ Per ordinare un array in modo crescente (0, 1, 2, 3, 4, 5)
 ```cpp
 sort(nome_del_array.begin(), nome_del_array.end());
 ```
+
 
 ### sort dec
 
@@ -44,6 +46,7 @@ array<int, 6> aNumeri { 0, 1, 2, 3, 4, 5 };
 sort(nome_del_array.begin(),nome_del_array.end(), greater<int>());
 ```
 
+
 ### *max_element
 
 Per trovare il massimo elemento, non scordatevi del asterisco!
@@ -51,6 +54,12 @@ Per trovare il massimo elemento, non scordatevi del asterisco!
 ```cpp
 *max_element(nome_del_array.begin(), nome_del_array.end());
 ```
+
+###### per gli array "dinamici"
+```cpp
+*min/max_element(begin(nome_del_array), end(nome_del_array));
+```
+
 
 ### *min_element
 
@@ -64,13 +73,16 @@ Per salvare questo valore in una variabile a vostro piacere bisogna fare in segu
 *min_element(nome_del_array.begin(), nome_del_array.end());
 ```
 
+
 ### accumulate
 
-Con questa funzione siamo in gradi di calcolare tutti gli elementi del array, potendo indicare anche da dove iniziare a contare *da_dove_deve_calcolare* solitamente è di valore 0 (calcola da 0)
+Con questa funzione siamo in grado di sommare tutti gli elementi del array, potendo indicare anche da dove iniziare a sommare *da_dove_deve_calcolare* solitamente è di valore 0 (calcola da 0)
 
 ```cpp
 accumulate(nome_del_array.begin(), nome_del_array.end(), da_dove_deve_calcolare);
 ```
+
+
 
 ## Array
 
@@ -80,15 +92,18 @@ accumulate(nome_del_array.begin(), nome_del_array.end(), da_dove_deve_calcolare)
 
 ```
 
+
 ### end
+
 
 ```cpp
 
 ```
 
+
 ### size
 
-È una funzionalità in grado di sostituire il classico sizeof() ma... con un grande ma, anche questa funziona solo con i contenitori. Ovviamente potete assegnare il valore ad una variabile ad vostro piacere (solitamente di tipo int)
+È una funzione in grado di sostituire il classico sizeof() ma... con un grande ma, anche questa funziona solo con i contenitori. Ovviamente potete assegnare il valore ad una variabile ad vostro piacere (solitamente di tipo int)
 
 ```cpp
 nome_del_array.size();
