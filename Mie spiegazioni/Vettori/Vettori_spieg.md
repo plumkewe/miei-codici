@@ -2,7 +2,7 @@
 
 ### Che cosa sono?
 
-####### **I vettori** sono dei **contenitori** proprio come gli array, ma hanno un grande vantaggio, la loro grandezza è **dinamica** *(gli array sono statici e non possono cambiare la loro grandezza nel corso della esecuzione del codice)* ma i loro vantaggi non finiscono qui, hanno un'altro punto al favore, quello di poter lavorare con essi attraverso le **funzionalità** apposite e **puntatori**, rendendoci la vita più semplice e permettendoci di finire i lavori in pochi istanti. Grazie alla loro grandezza dinamica usano la memoria in una maniera più **efficace**.
+###### **I vettori** sono dei **contenitori** proprio come gli array, ma hanno un grande vantaggio, la loro grandezza è **dinamica** *(gli array sono statici e non possono cambiare la loro grandezza nel corso della esecuzione del codice)* ma i loro vantaggi non finiscono qui, hanno un'altro punto al favore, quello di poter lavorare con essi attraverso le **funzionalità** apposite e **puntatori**, rendendoci la vita più semplice e permettendoci di finire i lavori in pochi istanti. Grazie alla loro grandezza dinamica usano la memoria in una maniera più **efficace**.
 
 
 ### Come riempire un vettore <br />
