@@ -10,8 +10,6 @@
 I modi in cui si può riempire un vettore sono **numerosi**, uno dei *più diffusi* è quello con iterazione mediante il ciclo **FOR**, innanzitutto per poter **lavorare** con gli vettori bisogna **includere** il *HEADER vector*!
 
 <br />
-<br />
-<br />
 
 #### Con il ciclo for (utente)
 
@@ -38,8 +36,6 @@ vector <tipo int, char, double, short int...> nome_del_vettore;
 
 `nome_del_vettore.push_back(numero);` con il **.push_back** assegnamo il nostro valore all'**ultima** posizione del vettore! quel puntino è molto importante è un puntatore, **non scordatevelo**!
 
-<br />
-<br />
 <br />
 
 #### Con la funzione fill
