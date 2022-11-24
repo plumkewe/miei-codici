@@ -9,6 +9,7 @@
 
 I modi in cui si può riempire un vettore sono **numerosi**, uno dei *più diffusi* è quello con iterazione mediante il ciclo **FOR**, innanzitutto per poter **lavorare** con gli vettori bisogna **includere** il *HEADER vector*!
 
+
 #### Con il ciclo for (utente)
 
 ```cpp
@@ -33,3 +34,20 @@ vector <tipo int, char, double, short int...> nome_del_vettore;
 `cin >> numero;` prendiamo dal utente un valore, in questo caso di tipo int (un numero)
 
 `nome_del_vettore.push_back(numero);` con il **.push_back** assegnamo il nostro valore all'**ultima** posizione del vettore! quel puntino è molto importante è un puntatore, **non scordatevelo**!
+
+
+#### Con la funzione fill
+
+```cpp
+fill (nome_del_vettore.begin() + 1, nome_del_vettore.end() - 3, 4);
+```
+
+Il nostro vettore è stato riempito di valore 4 in seguente modo: `0 4 4 4 4 0 0 0`
+
+###### Spiegazione
+
+`(nome_del_vettore.begin(), nome_del_vettore.end()` creiamo un range che va dal inizio (0) alla fine fine (x) in questo caso il nostro vettore deve avere una grandezza inizializzata lo si fa in questo modo: ```cpp vector <int> nome_del_vettore (la_sua_grandezza);``` in questo caso la grandezza del vettore è pari a 8!
+
+`+ 1    - 3, 4` grazie ai questi li ho chiamati "parametri" possiamo riempire ad esempio soltanto il centro del vettore, ovvero con il + 1 si lascia lo spazio al valore (0 = niente) e si inizia a riempire il vettori di valore 4 ma grazie al - 3 i valori verranno riempiti soltanto dal 2 a 5
+
+``
