@@ -50,6 +50,24 @@ Il nostro vettore è stato riempito di valore 4 in seguente modo: `0 4 4 4 4 0 0
 
 `(nome_del_vettore.begin(), nome_del_vettore.end()` creiamo un range che va dal inizio (0) alla fine fine (x) in questo caso il nostro vettore deve avere una grandezza inizializzata lo si fa in questo modo: ```cpp vector <int> nome_del_vettore (la_sua_grandezza);``` in questo caso la grandezza del vettore è pari a 8!
 
-`+ 1    - 3, 4` grazie ai questi li ho chiamati "parametri" possiamo riempire ad esempio soltanto il centro del vettore, ovvero con il + 1 si lascia lo spazio al valore (0 = niente) e si inizia a riempire il vettori di valore 4 ma grazie al - 3 i valori verranno riempiti soltanto dal 2 a 5
+`+ 1    - 3, 4` grazie ai questi li ho chiamati "parametri" possiamo riempire ad esempio soltanto il centro del vettore, ovvero con il + 1 si lascia lo spazio al valore (0 = niente) e si inizia a riempire il vettore di valore 4 ma grazie al - 3 i valori verranno riempiti soltanto da 2 a 5
 
-``
+<br />
+
+#### Di valori crescenti (for)
+
+```cpp
+for (int i = 0; i < 8; ++ i) {
+
+vect [i] = i;
+
+}
+```
+
+Il nostro vettore è stato riempito di seguenti valori: `0 1 2 3 4 5 6 7`
+
+###### Spiegazione
+
+`for (int i = 0; i < 8; ++ i)` creiamo un semplice ciclo for che si interromperà quando i non sarà più minore del 8`
+
+`vect [i] = i;` con ogni esecuzione il valore della i verrà aumentato di 1, quindi verrà assegnato nel indice i del vettore un valore i... 0:0, 1:1, 2:2... il vettore ugualmente all'array **inizia dal 0**!
