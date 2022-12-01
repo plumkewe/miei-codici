@@ -7,7 +7,7 @@
 - [Valori del utente](#Del-utente) <br />
 - [Valori uguali](#Uguali) <br />
 - [Valori crescenti](#Crescenti) <br />
-- [Valori casuali](#Casuali)
+- [Valori casuali](#Casuali)  <br />
 - [Valori casuali (#random)](#Random)
 
 ## Del utente
@@ -181,10 +181,10 @@ int main() {
 
 ## Random
 
-Questa funzione è presente nel **HEADER** random, non scordatevi di includerlo `#include <random>` (da c++11), dunque in questo caso verrà creato un "meccanismo" per generare dei numeri casuali, verramente casuali a differenza del rand!
+Questa funzione è presente nel **HEADER** random, non scordatevi di includerlo `#include <random>` (da c++11), dunque in questo caso verrà creato un "meccanismo" per generare dei numeri casuali, verramente casuali a differenza del rand!  <br />
 
-Questo è il meccanismo (non so come si chiama io l'ho chiamato meccanismo)
-È meglio lasciarlo cosi come, certo va compilato nel tipo potete mettere int, double..., potete associale un nome al vostro "meccanismo" (nome_del_meccanismo), tutto il resto deve rimanere com'è
+Questo è il meccanismo (non so come si chiama io l'ho chiamato meccanismo)  <br />
+È meglio lasciarlo cosi com'è, certo va compilato nel <tipo> potete mettere int, double..., potete associale un nome al vostro "meccanismo" (nome_del_meccanismo), tutto il resto deve rimanere com'è
 
 ```cpp
 random_device rd;
