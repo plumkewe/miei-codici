@@ -10,12 +10,17 @@ int main() {
 	
 	int aArray[10][10]; //  creiamo una matrice di tipo int e con "10 elementi + 1"
 
+	
+	for (int i = 0; i < 10; i++) { // creiamo un loop annidati 
 		
-		for (int j = 0, k = 0; k <= 10; ++j, ++k) { //  qui si fanno scorrere entrambe le direzioni del array 
-		
+		for (int j = 0, k = 0; j <= 10; ++j, ++k) { //  qui si fanno scorrere entrambe le direzioni del array 
+			
 			aArray[j][k] = 1; //  e in ogni posizione si assegna il valore '1'
-
+			
 		}
+		
+		
+	}
 	
 	
 	return 0;
