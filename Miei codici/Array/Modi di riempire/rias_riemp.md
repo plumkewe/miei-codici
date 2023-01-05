@@ -7,6 +7,7 @@
 - [Valori del utente](#Del-utente) <br />
 - [Valori uguali](#Uguali) <br />
 - [Valori crescenti](#Crescenti) <br />
+- [Valori crescenti (#recursion)](#Recursion) <br />
 - [Valori casuali](#Casuali)  <br />
 - [Valori casuali (#random)](#Random)
 
@@ -225,4 +226,43 @@ int main() {
 
 	return 0;
 }
+```
+
+## Recursion
+
+È bello saperle usare le sto soltanto studiando, vi consiglio di leggere un articolo su google per capirle meglio o addirittura un libro che parla dei algoritmi. In parole povere è una funzione che richiama se stessa funziona come un loop dai quale dovete uscire quella condizione viene chiamata parte fissa non la puoi omettere, se no loopera all'infinito!
+
+Ce poco da spiegare il codice è abbastanza chiaro.
+
+###### Codice intero
+```cpp
+#include <iostream>
+
+using namespace std;
+
+//  
+
+
+int riempi (int numeri[10], int lunghezza) { //  questa è una recursion-e (non so come si traduce in italiano) in sostanza è una funzione che richiama la stessa funzione. essa (recusione) è composta da una parte fissa e una no (lol) praticamente è come avere un loop che senza una condizione loopera all'infinito. diciamo che sono benvenute ma non sempre, conviene usarle per rendere il codice più comprensibile. 
+	
+	numeri [lunghezza] = lunghezza;
+	
+	if (lunghezza == 0)
+		return numeri[lunghezza] = lunghezza;
+	
+	else
+		return riempi (numeri, lunghezza - 1);
+	}
+	
+	
+	int main() {
+		setlocale(LC_ALL, "italian");
+		
+		int numeri [10];
+		
+		riempi(numeri, 9);
+		
+		
+		return 0;
+	}
 ```

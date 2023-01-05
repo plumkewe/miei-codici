@@ -16,6 +16,7 @@ int riempi (int numeri[10], int lunghezza) {
 		return riempi (numeri, lunghezza - 1);
 }
 
+
 void stampa (int numeri[10], int lunghezza, int i) {
 	
 	
