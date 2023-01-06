@@ -7,7 +7,7 @@
 - [Valori del utente](#Del-utente) <br />
 - [Valori uguali](#Uguali) <br />
 - [Valori crescenti](#Crescenti) <br />
-- [Valori crescenti (#recursion)](#Recursion) <br />
+- [Valori crescenti (#recursiva)](#Recursiva) <br />
 - [Valori casuali](#Casuali)  <br />
 - [Valori casuali (#random)](#Random)
 
@@ -158,7 +158,7 @@ nome_del_array[posizione_del_elemento] = rand()%limite;
 
 using namespace std;
 
-//  riempire un array con dei valori casuali atraverso un loop e rand 
+//  riempire un array con dei valori casuali attraverso un loop e rand
 
 
 int main() {
@@ -228,9 +228,11 @@ int main() {
 }
 ```
 
-## Recursion
+## Recursiva
 
-È bello saperle usare le sto soltanto studiando, vi consiglio di leggere un articolo su google per capirle meglio o addirittura un libro che parla dei algoritmi. In parole povere è una funzione che richiama se stessa funziona come un loop dai quale dovete uscire quella condizione viene chiamata parte fissa non la puoi omettere, se no loopera all'infinito!
+! probabilmente ci sono dei problemi con questo codice, lasciatelo perdere
+
+È bello saperle usare le sto soltanto studiando, vi consiglio di leggere un articolo su google per capirle meglio o addirittura un libro che parla di algoritmi. In parole povere è una funzione che richiama se stessa, funziona come un loop dal quale dovete uscire quella condizione viene chiamata parte fissa non la puoi omettere, se no loopera all'infinito!
 
 Ce poco da spiegare il codice è abbastanza chiaro.
 
@@ -243,15 +245,16 @@ using namespace std;
 //  
 
 
-int riempi (int numeri[10], int lunghezza) { //  questa è una recursion-e (non so come si traduce in italiano) in sostanza è una funzione che richiama la stessa funzione. essa (recusione) è composta da una parte fissa e una no (lol) praticamente è come avere un loop che senza una condizione loopera all'infinito. diciamo che sono benvenute ma non sempre, conviene usarle per rendere il codice più comprensibile. 
+int riempi (int numeri[], int lunghezza) { //  questa è una recursion-e (non so come si traduce in italiano) in sostanza è una funzione che richiama la stessa funzione. essa (recusione) è composta da una parte fissa e una no (lol) praticamente è come avere un loop che senza una condizione loopera all'infinito. diciamo che sono benvenute ma non sempre, conviene usarle per rendere il codice più comprensibile. 
 	
-	numeri [lunghezza] = lunghezza;
+	numeri [lunghezza - 1] = lunghezza;
+	lunghezza --;
 	
 	if (lunghezza == 0)
-		return numeri[lunghezza] = lunghezza;
+		return 0;
 	
 	else
-		return riempi (numeri, lunghezza - 1);
+		return riempi (numeri, lunghezza);
 	}
 	
 	
@@ -260,7 +263,7 @@ int riempi (int numeri[10], int lunghezza) { //  questa è una recursion-e (non 
 		
 		int numeri [10];
 		
-		riempi(numeri, 9);
+		riempi(numeri, 10);
 		
 		
 		return 0;
