@@ -39,15 +39,15 @@ int main() {
 	cout << email << endl;
 	
 
-	char letter1 = first_name.at(0); //  per "estrare la lettera" dalla stringa 
-									 //  che a sua volta è un array di char
-									 //  quindi indice 0 = 1 lettera
+	char letter1 = first_name.at(0);	//  per "estrare la lettera" dalla stringa
+										//  che a sua volta è un array di char
+										//  quindi indice 0 = 1 lettera
 	
 	cout << letter1 << endl;
 	
 	
-	string nickname = first_name.substr(0, 3); //  sottrae un range di lettere
-											   //  dalla stringa (da, a)
+	string nickname = first_name.substr(0, 3);  //  sottrae un range di lettere
+												//  dalla stringa (da, a)
 												
 	cout << nickname << "123" << endl;
 	
@@ -56,8 +56,8 @@ int main() {
 	cout << ciao << endl;
 	
 	
-	int posizione = first_name.find('l'); //  cerca la lettera una striga e
-										  //  restituisce il suo indice
+	int posizione = first_name.find('l');	//  cerca la lettera una striga e
+											//  restituisce il suo indice
 											
 	cout << posizione << endl;
 	

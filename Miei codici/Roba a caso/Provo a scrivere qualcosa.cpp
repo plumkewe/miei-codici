@@ -10,6 +10,7 @@
 //  Creator: io
 
 //  bho non avevo nulla da fare, alla fine vector >> array ha un API più flessibile
+//  è un codice inutile
 
 
 int riempire (std::array <int, 10> &nome, int i) {

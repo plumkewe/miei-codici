@@ -5,7 +5,7 @@ using namespace std;
 //  
 
 
-int riempi (int numeri[], int lunghezza, int i) {
+int riempi (int numeri[], const int lunghezza, int i) { // stessa cosa anche qui
 	
 	cout << "Inserisci il numero " << i + 1 << ": ";
 	cin >> numeri [i];
@@ -19,7 +19,11 @@ int riempi (int numeri[], int lunghezza, int i) {
 }
 
 
-void stampa (int numeri[], int lunghezza, int i) {
+void stampa (const int numeri[], const int lunghezza, int i) {  //  dato che questa
+																//  funzione non
+																//  andrà a modificare
+																//  la lunghezza ed array
+																//  uso const
 	
 	
 	if (i == lunghezza)
