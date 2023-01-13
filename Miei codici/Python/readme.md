@@ -1,0 +1,1 @@
+Quella volta nel 2021 che volevo imparare a programmare in python, ma qualcosa era andato di storto e avevo perso interesse quasi immediatamente. Non mi piace neanche la sintassi!
