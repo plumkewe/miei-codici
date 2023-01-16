@@ -3,6 +3,7 @@
 using namespace std;
 
 //  questa parte non l'ho capita un granchè
+//  https://www.learncpp.com/cpp-tutorial/pointers-and-const/ è chiaro
 
 //  pcn che è un pointer ad una const int vuol dire:
 //  pcn può puntare ad un'altra const int
@@ -36,7 +37,7 @@ int main()
 	
 	cout << pcn << '\t' << *pcn << endl;
 	
-//	*pcn = 200;  //  mon possiamo farlo attraverso dereferencing si può sempre modificare il valore attraverso la variabile stessa, solo che non lo si puó fare attraverso un pointer.
+//	*pcn = 200;  //  mon possiamo farlo attraverso dereferencing si può sempre modificare il valore attraverso la variabile stessa, solo che non lo si puó fare attraverso un pointer dato che sta puntando ad una variabile const
 	
 	
 	return 0;

@@ -7,6 +7,7 @@ using namespace std;
 //  si può puntaro un pointer ad un'altro. più puntatori possono puntare ad lo
 //  stesso indirizzo
 
+//  https://www.learncpp.com/cpp-tutorial/pointers-and-const/
 
 int main()
 {

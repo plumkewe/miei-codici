@@ -4,6 +4,7 @@ using namespace std;
 
 //  sono rari, ma esistono, hey.
 
+//  https://www.learncpp.com/cpp-tutorial/pointers-and-const/
 
 int main()
 {

@@ -6,6 +6,7 @@ using namespace std;
 //  la differnza dipende dal tipo "che il pointer ha" che dev'essere uguale al
 //  al quello che sta puntando
 
+//  https://www.learncpp.com/cpp-tutorial/pointers-and-const/
 
 int main()
 {

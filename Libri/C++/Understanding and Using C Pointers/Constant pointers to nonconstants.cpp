@@ -2,7 +2,7 @@
 
 using namespace std;
 
-//  
+//  https://www.learncpp.com/cpp-tutorial/pointers-and-const/
 
 
 int main()
@@ -11,10 +11,10 @@ int main()
 	
 	int num;
 	int *const cpn = &num;  //  non possiamo cambiere il pointer ma
-							//  ma la data alla quale sta puntado la si può
+							//  ma la data alla quale sta puntado, la si può
 	const int limit = 500;
 	
-	*cpn = limit; //  possiamo deferenciare e assegnare il valore a ciò che il cpn sta "puntando" (&num)
+	*cpn = limit; //  possiamo deferenciare e assegnare il valore a ciò che il cpn sta "puntando" (&num) che non è const
 	*cpn = 21;
 	
 	//  ma non possiamo fare questo:
