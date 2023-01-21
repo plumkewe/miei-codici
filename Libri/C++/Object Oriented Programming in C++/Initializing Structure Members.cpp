@@ -17,8 +17,8 @@ int main()
 {
 	setlocale(LC_ALL, "italian");
 	
-	parte p1 { 6453, 42, 231.3f };
-	parte p2 ;
+	parte p1 { 6453, 42, 231.3f };	//  questi valori sono già dentro la struttura,
+	parte p2 ;						//  in questo modo abbiamo inizializzato la nostra variabile della struttura
 	
 	cout << "Modello: "      << setw(14) << right << p1.numeromodello << endl;
 	cout << "Numero parte: " << setw(7)  << right << p1.numeroparte << endl;
