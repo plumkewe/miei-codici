@@ -28,6 +28,10 @@ int main()
 	dining.width.feet     = 10;
 	dining.width.inches   = 0.0;
 	
+//	possiamo anche inizializzare nasted structures in questo modo
+	
+//	Room dining = { {13, 6.5}, {10, 0.0} };  tra {} e divisi con , 
+	
 	float l = dining.lenght.feet + dining.lenght.inches / 12;
 	float w = dining.width.feet  + dining.width.inches  / 12;
 	

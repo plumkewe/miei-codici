@@ -3,7 +3,8 @@
 
 using namespace std;
 
-//  
+//  le strutture vengono usate principalmente per salvare i valori a differenza
+//  delle classi che possono, salvare i valori e funzioni!
 
 struct parte
 {
