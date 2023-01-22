@@ -19,9 +19,9 @@ int main()
 {
 	setlocale(LC_ALL, "italian");
 	
-	days_of_the_week day1, day2;  //  variabili di tipo enum days_of_the_week
+	days_of_the_week day1, day2;  //  variabili di tipo enum days_of_the_week, qui vv
 	
-	day1 = Mon;  //  possiamo assegnare qulsiasi valore presente in days_of_the_week
+	day1 = Mon;  //  possiamo assegnare qulsiasi valore presente in days_of_the_week, e lo si può fare direttamente sopra ^^
 	day2 = Thu;
 //	day3 = Helloween;  //  non lo possiamo fare!
 	
