@@ -25,9 +25,9 @@ int main()
 	setlocale(LC_ALL, "italian");
 	
 	smallobj s1, s2; //  due oggetti di classe smallobj (instance of a class)
-	
+//	  v class member access operator
 	s1.setdada(1923); //  richiamo di funzione membro per assegnare il valore
-	s2.setdada(1312);
+	s2.setdada(1312); // "is associated with a specific object"
 	
 	s1.showdata(); //  richiamo di funzione per visualizzare il valore
 	s2.showdata();
