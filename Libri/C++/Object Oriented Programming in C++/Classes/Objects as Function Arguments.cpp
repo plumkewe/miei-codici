@@ -11,12 +11,9 @@ private:
 	float inches;
 	
 public:
-	Distance() : feet(0), inches(0.0)
-	{
-	}
-	Distance(int ft, float in) : feet(ft), inches(in)
-	{
-	}
+	Distance() : feet(0), inches(0.0) {}  //  initializer list or member-initialization list
+	
+	Distance(int ft, float in) : feet(ft), inches(in) {}
 	
 	void getdist()
 	{

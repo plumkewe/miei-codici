@@ -10,10 +10,12 @@ private:
 	unsigned int count;
 	
 public:
-	Counter() : count(0)  //  constructor
-	{
-		
-	}
+//	Counter() : count(0) {}  //  constructor
+							 //  è simile a scrivere:
+    						 //  ma non meglio di questo.
+	
+	Counter() { count = 0; }
+	
 	void inc_count()
 	{
 		count ++;
