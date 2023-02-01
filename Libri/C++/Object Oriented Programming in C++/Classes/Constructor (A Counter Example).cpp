@@ -10,11 +10,11 @@ private:
 	unsigned int count;
 	
 public:
-//	Counter() : count(0) {}  //  constructor
-							 //  è simile a scrivere:
-    						 //  ma non meglio di questo.
+//	Counter() { count = 0; }  //  constructor
+							  //  è simile a scrivere:
+    						  //  ma non meglio di questo.
 	
-	Counter() { count = 0; }
+	Counter() : count(0) { cout << "Mi sono appena creato!" << endl; }
 	
 	void inc_count()
 	{
@@ -24,6 +24,8 @@ public:
 	{
 		return count;
 	}
+	
+	~Counter() { cout << "Addio!" << endl; }  //  destructor è utile per delloc-are spazio alloc-ato per un oggetto attraverso un constructor (non in questo caso)
 };
 
 
