@@ -30,7 +30,7 @@ public:
 	
 	void add_dist( Distance, Distance );
 };
-
+//           v scope resolution operator
 void Distance::add_dist(Distance d2, Distance d3)
 {
 	inches = d2.inches + d3.inches;
