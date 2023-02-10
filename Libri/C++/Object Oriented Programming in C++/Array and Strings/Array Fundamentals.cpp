@@ -10,12 +10,13 @@ int main()
 {
 	setlocale(LC_ALL, "italian");
 	
-	int age[4];
+//	v type   v name   v size
+	int      age      [4];  //  un array di tipo int con il nome age che contiene 4 elementi 0 1 2 3
 	
 	for (int i = 0; i < 4; i++)
 	{
 		cout << "Enter an age: ";
-		cin  >>  age[i];
+		cin  >>  age[i]; //  <  accesso al array index
 	}
 	
 	for (int indice : age)
