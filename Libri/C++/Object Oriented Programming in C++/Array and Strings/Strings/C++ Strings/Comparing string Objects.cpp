@@ -3,7 +3,7 @@
 
 using namespace std;
 
-//  
+//  si possono usare gli operatori overloadati per verifiare se una stringa è uguale oppure se precede l'altra in ordine alfabetico
 
 
 int main()
