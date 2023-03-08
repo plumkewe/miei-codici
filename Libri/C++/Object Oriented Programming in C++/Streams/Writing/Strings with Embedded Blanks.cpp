@@ -1,4 +1,5 @@
 #include <fstream>
+#include <iostream>
 
 using namespace std;
 
@@ -15,6 +16,16 @@ int main()
 	outfile << "Tutto a posto, gioco a scacchi.\n";
 	outfile << "Perfetto, anche io!\n";
 	
+	
+	const int MAX = 80;
+	char buffer[MAX];
+	ifstream infile("TESTO.txt");
+	
+	while ( !infile.eof() )
+	{
+		infile.getline(buffer, MAX);
+		cout << buffer << endl;
+	}
 	
 	return 0;
 }
