@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Homepage</title>
+		
+		<style>
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+			a {
+				color: lightblue;
+			}
+			a:visited {
+				color: silver ;
+			}
+			a:hover, a:active {
+				color: aqua;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<h1>Homepage</h1>
+		<p>Il mio account su <a href="github.com">GitHub</a></p> <!-- ancher tag, absolute reference, a differenza delle foto che sono relativi (foto nella stessa cartella del file html) -->
+		
+		<hr>
+		<nav>
+			<ul>
+				<li><a href="#articoli">Articoli</a></li>
+				<li><a href="#siamo">Chi siamo</a></li>
+			</ul>
+		</nav>
+		
+		<section id="articoli">
+		<h2>Nostri articoli</h2>
+		<h3>Chi è una capra?</h3>
+		<p>Scopriamo chi è per davvero una capra...</p>
+		
+		</section>
+		
+		<section id="siamo"><br>
+			<h3>Chi siamo</h3>
+			<p>Siamo un progetto degli alieni</p>
+			
+		</section>
+		
+		<hr>
+		<a href="oltre.html"><strong>OLTRE</strong></a> <!-- link relativo -->
+		<a href="#articoli"><strong>BACK TO TOP</strong></a>
+	
+	</body>
+</html>
