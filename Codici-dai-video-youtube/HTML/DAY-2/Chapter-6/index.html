@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it"> <!-- per la migliore organizzazione bisogna creare una nuova cartella in qui mettere delle immagini -->
+	<head>
+		<meta charset="UTF-8">
+		<title>Immagini</title>
+		
+		<style>
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<section id="immagini">
+			<h1>Immagini</h1>
+			
+			<img src="img/img1.png" alt="Immagine di Supermario" width="400"> <!-- la chiusura non è richiesa! ci sono due attributi uno è src source da dove prendere l'immagine e alt testo alternativo per le persone non vedenti e cet. quando ce un errore il testo alternativo verrà mostrato al posto della immagine -->
+			<img src="img/img2.jpeg" alt="Un gatto triste" title="Sono un gatto triste" width="400" height="400">
+		</section>
+		
+		<section id="altre_immagini">
+			<h2>Altre immagini</h2> <!-- cio che non possiamo vedere senza dover scrollare si chiama fold, e tutto cio che possiamo vedere senza dover scrollare si chiama bellow the fold -->
+			<ul>
+				<li>
+					<p>Un immagine di un SuperMario felice di vivere.</p>
+					<figure>
+						<img src="img/img1.png" alt="SuperMario" width="100" title="Voglio essere come lui" loading="lazy"> <!-- una immagine che non si vede subito dev'essre di loading lazy -->
+						<figcaption>
+							SuperMario supporta la...?
+						</figcaption>
+					</figure>
+				</li>
+				<li>
+					<p>Ciao non so chi sono...</p>
+					<figure> <!-- non è solo per le immagini -->
+						<img src="img/img3.png" alt="sussybaka" title="Non sono un impostore!" width="200" loading="lazy">
+						<figcaption>
+							Un immagine di un impostore
+						</figcaption>
+					</figure>
+				</li>
+				
+			</ul>
+		</section>
+		
+		<figure>
+			<figcaption>Python</figcaption>
+			<p>
+				<code>print("hello world")</code>
+			</p>
+		</figure>
+		
+		<hr color="gray" size="2">
+		<p>&copy;Plympy</p>
+		
+	</body>
+</html>

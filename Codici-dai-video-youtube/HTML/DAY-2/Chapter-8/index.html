@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Tabelle</title>
+		
+		<style>
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+			table, tr, th, td, caption {
+				border: 2px solid white;
+				border-collapse: collapse;
+				padding: 0.5rem;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<h1>Tabelle</h1>
+		
+		<table>
+			<caption>Una tabella senza senso</caption>
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th scope="col">Tempo</th>
+					<th scope="col">Parola</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Mattina</th>
+					<td>
+						<time datetime="8:00">8:00</time> -
+						<time datetime="9:00">9:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Pomeriggio</th>
+					<td>
+						<time datetime="10:00">10:00</time> -
+						<time datetime="11:00">11:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Sera</th>
+					<td>
+						<time datetime="12:00">12:00</time> -
+						<time datetime="13:00">13:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Nulla</th>
+					<td colspan="2">CIAO</td>
+				</tr>
+				<tr>
+					<th scope="row">Niente</th>
+					<td rowspan="2">ALTRO</td>
+					<td>Dormo</td>
+				</tr>
+				<tr>
+					<th scope="row">Nulla</th>
+					<td>Non dormo</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Ciao testo testo testo testo testo testo testo testo testo </td>
+				</tr>
+			</tfoot>
+		</table>
+		
+		
+	</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Forms and Inputs</title>
+		
+		<style>
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<h1>Forms and Inputs</h1>
+	
+		<br>
+		
+		<article id="contact">
+			<h2>Contattami</h2>
+			<p>Contattami se hai qualche domanda.</p>
+			
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Informazioni personali</legend>
+				<p>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" placeholder="Antonio" autocomplete="on" required="true" autofocus> <!-- il name è come viene identificato sul lato server, autocomplete funziona quando lo vai a mandare unaltra volta ti sugerisce le stesse info -->
+				</p>
+				<p>
+					<label for="cognome">Cognome:</label>
+					<input type="text" name="cognome" id="cognome" placeholder="Rossi" autocomplete="on" required="true">
+				</p>
+				<p>
+					<label for="telefono">Telefono:</label>
+					<input type="tel" name="telefono" id="telefono" placeholder="+39..."  required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				</p>
+				<p>
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" placeholder="Tuo secreto"  required="true">
+				</p>
+				<p>
+					<label for="decennio">Decennio:</label>
+					<input type="number" name="decennio" id="decennio" min="1950" max="2024" step="10" value="2017" required="false">
+				</p>
+				<p>
+					<label for="caffe">Caffe preferito:</label>
+					<select name="caffe" id="caffe"> <!-- multiple più scelte -->
+						<optgroup label="Caffe">
+							<option value="espresso">Espresso</option>
+							<option value="cappuccino">Cappuccino</option>
+						</optgroup>
+						<optgroup label="Altri">
+							<option value="americano">Americano</option>
+							<option value="macchiato">Macchiato</option>
+							<option value="altro">Altro</option>
+						</optgroup>
+					</select>
+				</p>
+				
+				<p>
+					<label for="caffe">Caffe preferito:</label>
+					<input type="text" name="caffe" id="caffe" list="lista-caffe">
+					<datalist id="lista-caffe">
+						<option value="caffe"></option>
+						<option value="macchiato"></option>
+						<option value="americano"></option>
+						<option value="altro"></option>
+					</datalist>
+				</p>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Qual è il tuo cibo preferito?</legend>
+					<p>
+						<input type="radio" name="cibo" id="pizze" value="pizze">
+						<label for="pizze">Pizze</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="hamburger" value="hamburger">
+						<label for="gamburger">Hamburger</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="tacos" value="tacos">
+						<label for="tacos">Tacos</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="altro" value="altro">
+						<label for="altro">Altro</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Hai dei animali domestici?</legend> <!-- più scelte a differenza del radio -->
+					<p>
+						<input type="checkbox" name="animali" id="cane" value="cane">
+						<label for="cane">Cane</label>
+					</p>
+					<p>
+						<input type="checkbox" name="animali" id="gatto" value="gatto">
+						<label for="gatto">Gatto</label>
+					</p>
+					<p>
+						<input type="checkbox" name="animali" id="altro" value="altro">
+						<label for="altro">Altro</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Mandami una nota</legend>
+					<label for="massage">Tuo messaggio</label>
+					<br>
+					<textarea name="massage" id="message" cols="30" rows="10" placeholder="Scrivi il tuo messaggio qui..."></textarea>
+				</fieldset>
+				<br>
+				<button type="submit">Invia</button>
+				<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Posta</button>
+				<button type="reset">Risetta</button>
+			</form>
+			
+		</article>
+		
+		
+	</body>
+</html>

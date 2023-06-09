@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Organizzazione</title>
+		<meta name="description" content="Come organizzare le pagine in HTML con semantics tags.">
+		
+		<style>
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+			h1 {
+				color: fuchsia;
+			}
+			a {
+				color: aqua;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<header>
+			<h1>Organizzazione</h1>
+			
+			<hr>
+			<nav aria-label="primary-navigation">
+		<!--	<nav aria-labelledby="primary-navigation"> -->
+			<!--	<h2 id="primary-navigation">Primary navigation</h2> -->
+				<ul>
+					<a href="#articoli">Articoli</a>
+				</ul>
+				
+				<ul>
+					<a href="google.com">ciao</a>
+				</ul>
+			</nav>
+			<hr>
+			
+		</header>
+		
+		<p>nav(navigazione), hr(nuova sezione), h1(title), main, header, footer, section... lo sono. invece il DIV non ha senso serve solo per "dividere" ed è un blocco stessa cosa va per SPAN (si usano in css)</p>
+		
+		<br>
+		
+		<main>
+			<article id="articoli">
+			<!-- <section id="articoli"> -->
+				
+			<h2>I nostri articoli:</h2>
+			
+				<section>
+					<h3>Gatto che mangia</h3>
+					<p>È un bravo gatto, che mangia un cibo delizioso... leggi di più</p>
+				</section>
+				
+				<section>
+					<br>
+					
+					<h3>Gatto che Beve</h3>
+					<p>Il gatto non solo mangia ma anche beve...</p>
+					
+					<br>
+					
+					<aside>
+						<details>
+							<summary>Indovina quanti <mark>video</mark> mi guardo in una settimana?</summary>
+							<p>Da lunedì a venerdì dalle <time datetime="13:00">13:00</time></p> <!-- per accessibilità per le ore si usa datetima="PT3H"(PER TRE ORE) -->
+						</details>
+					</aside>
+				
+				</section>
+				
+				
+				
+			<!-- </section> -->
+			</article> <!-- si usano gli articli per dei topic specifici si usa le section per delle cose più generiche, per una divisone più genreica -->
+		</main>
+		
+		<footer>
+			
+			<br>
+			<br>
+			
+			<p><strong>&copy; Pimply all right reserved.</strong> <br>
+				follow me on: instagram - twitter - youtube
+			</p>
+			
+		</footer>
+		
+		
+	</body>
+</html>
