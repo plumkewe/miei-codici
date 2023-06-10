@@ -1,0 +1,40 @@
+body { /* element selector */
+	font-size: 22px;
+/*	border: solid black 2px; */
+/*	font-family: sans-serif; */
+}
+
+/* html { /* font settings here!
+	font-family: sans-serif;
+} */
+
+main {
+	font-family: monospace;
+	font-size: 14px;
+}
+
+/* * {
+	font-family: sans-serif; cambia tutto sulla pagina. universal selector.
+} */
+
+p { /* element selector */
+	color: purple;
+}
+
+p span { /* nasted, cerce dei span che si travano in p. è meglio usare una classe dato che possa essere riusata class="highlight"; */
+	color: aqua;
+	text-transform: uppercase;
+	background-color: red;
+}
+
+h1, h2 {
+	color: blue;
+}
+
+.gray { /* class */
+	color: gray;
+}
+
+#secondo { /* ID meglio non usarli */
+	font-style: italic;
+}

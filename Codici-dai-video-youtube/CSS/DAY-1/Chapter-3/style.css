@@ -1,0 +1,19 @@
+body {
+	font-size: 21px;
+	font-family: sans-serif;
+	color: navy;
+	
+	color: rgb(0, 250, 0);
+	
+	line-height: 1.5;
+	background: papayawhip;
+}
+
+p {
+	color: rgb(0, 0, 0);
+	color: rgba(0, 0, 0, 0.5); /* aggiugne la trasparenza, alpha channel */
+	color: #000000;
+	color: hsl(<#hue#>, <#saturation#>, <#lightness#>);
+	color: hsla(<#hue#>, <#saturation#>, <#lightness#>, <#alpha#>);
+	color: #333;
+}
