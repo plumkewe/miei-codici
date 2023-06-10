@@ -1,0 +1,36 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+p {
+	font-size: 20px; /* absolute value */
+	
+}
+
+header {
+	width: 50%; /* relativo al */
+}
+
+h1 {
+	border: 2px dashed red;
+	width: 100%;
+	font-size: 3rem;
+	padding: 1em; /* equivalente alla grandezza del font, padding marging per buttoncini anche */
+}
+
+main {
+	width: 50vw; /* si può usare anche % */
+	background-color: aqua;
+	font-size: 2rem;
+}
+
+p {
+	font-size: 1em;
+	width: 40ch; /* 40 caratteri prima di andare a capo*/
+}
+
+body {
+	width: 100vw; /* è meglio usare %!!! */
+}
