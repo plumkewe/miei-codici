@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap');
+
+body {
+	padding: 10%;
+	font-size: 2rem;
+	font-family: "Times New Roman", Arial, monospace; /* usa il primo font disponibile */
+	font-family: 'Roboto', sans-serif;
+}
+
+/*input, button {
+	font: inherit;
+}*/
+	
+
+p {
+/*	text-decoration: underline;*/
+/*	text-decoration: overline;*/
+/*	text-decoration: line-through;*/
+	text-decoration: none; /* per i link è utile dato che sono sottolineati e con none non lo saranno più */
+	text-transform: capitalize; /* ogni nuova parola verrà scritta con la lettera maiuscola */
+	text-transform: uppercase; /* tutte */
+	text-transform: lowercase; /* tutte */
+	
+	text-align: justify;
+	
+	text-indent: 2em;
+	
+	line-height: 1.5;
+/*	letter-spacing: 0.1em;*/
+/*	word-spacing: 2em;*/
+	
+	font-weight: bolder;
+	font-style: oblique;
+}

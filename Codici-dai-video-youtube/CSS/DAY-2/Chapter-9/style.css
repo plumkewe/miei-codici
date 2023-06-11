@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0.5rem;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+header {
+	border: 2px solid black;
+	border-radius: 2rem;
+	margin: 0 auto 1rem;
+	max-width: 600px;
+	font-size: 2rem;
+	line-height: 7rem;
+}
+
+h1 {
+	padding: 1rem;
+	background-color: aqua;
+	border-radius: 1.9rem 1.9rem 0 0;
+}
+
+li {
+	list-style-type: none;
+	border-top: 1px solid black;
+}
+
+li a {
+	display: block;
+}
+
+li a,
+li a:visited {
+	text-decoration: none;
+	color: black;
+}
+
+li a:hover,
+li a:focus {
+	background: black;
+	color: white;
+	cursor: pointer;
+}
+
+li:last-child a {
+	border-radius: 0 0 1.9rem 1.9rem;
+}

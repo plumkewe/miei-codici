@@ -1,0 +1,37 @@
+body {
+	padding: 5% 10%;
+	font-size: 2rem;
+	font-family: sans-serif;
+}
+
+ol {
+	list-style-type: lower-greek;
+	list-style-type: decimal-leading-zero; /* inizia da 01 */
+	list-style-type: upper-roman;
+	
+	padding: 0;
+}
+
+ul {
+	list-style-type: square;
+	text-align: center;
+	
+	list-style-position: inside;
+	color: purple;
+	line-height: 1.4;
+/*	list-style-image: url(img.jpg);*/
+/*	list-style: square url(img.jpg) inside;*/
+}
+
+ol li:nth-child(2) { /* solo secondo odd, even*/
+	color: red;
+}
+
+/* preseudo elemento :: marker */
+
+ul::marker {
+	color: black;
+	font-family: monospace;
+	font-size: 0.5em;
+	content: "Only 5€ >> ";
+}
