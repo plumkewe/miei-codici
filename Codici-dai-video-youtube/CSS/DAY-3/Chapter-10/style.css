@@ -1,0 +1,57 @@
+/* 2h:50m video css */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-size: 2rem;
+	font-family: sans-serif;
+}
+
+p {
+	background-color: lime;
+/*	margin: 100px 50px;*/
+}
+
+/*main {
+	background-color: red;
+	width: 50%;
+}*/
+	
+.opposite {
+	display: inline-block;
+	background-color: black;
+	color: white;
+	margin-top: 30px;
+	height: 100px;
+	padding: 2rem;
+}
+
+/* nav */
+
+ul {
+	list-style-type: none;
+	padding: 0.5rem;
+	text-align: right;
+	background-color: red;
+	margin: 0;
+}
+
+li {
+	display: inline-block;
+	margin-inline: 0.5rem;
+}
+
+li a {
+	color: white;
+	text-decoration: none;
+}
+
+li a:hover,
+li a:focus {
+	text-decoration: underline;
+}

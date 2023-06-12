@@ -1,0 +1,37 @@
+body {
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
+.columns {
+/*	column-count: 2;*/
+/*	column-width: 250px;*/
+	columns: 4 250px;
+	column-rule: 3px solid black;
+	column-gap: 3rem;
+}
+
+.columns p {
+	margin-top: 0;
+}
+
+.columns h2 {
+	margin-top: 0;
+	background-color: lime;
+	color: black;
+	padding: 1rem;
+	break-inside: avoid;
+	break-before: column;
+}
+
+.columns .quote {
+	margin-top: 2rem;
+	font-size: 3rem;
+	text-align: center;
+	color: aqua;
+	column-span: all;
+}
+
+.nowrap {
+	white-space: nowrap;
+}

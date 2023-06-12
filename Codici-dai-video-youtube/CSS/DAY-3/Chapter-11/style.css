@@ -1,0 +1,33 @@
+body {
+	font-size: 1.5rem;
+	font-family: sans-serif;
+}
+
+.block {
+	width: 20vw;
+	height: 20vw;
+	background-color: black;
+	color: white;
+	padding: 1rem;
+}
+
+.left {
+	float: left;
+	margin-right: 1rem;
+}
+
+.right {
+	float: right;
+	margin-left: 1rem;
+}
+
+.clear {
+	clear: both;
+}
+
+section {
+	background-color: lime;
+	border: 2px solid red;
+	padding: 1rem;
+	display: flow-root;
+}
