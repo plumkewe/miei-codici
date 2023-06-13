@@ -1,0 +1,59 @@
+body {
+	font-family: sans-serif;
+}
+
+.grid-container {
+	display: grid;
+	gap: 1em;
+	
+	grid-template-areas: 
+	"uno"
+	"due"
+	"tre"
+	"quattro"
+	"cinque"
+	"sei";
+	
+}
+
+.elemento {
+	background-color: green;
+	padding: 1em;
+	box-shadow: 1px 1px 5px black;
+	text-align: center;
+	
+}
+
+.elemento:nth-child(1){
+	grid-area: uno;
+}
+
+.elemento:nth-child(2){
+	grid-area: due;
+}
+
+.elemento:nth-child(3){
+	grid-area: tre;
+}
+
+.elemento:nth-child(4){
+	grid-area: quattro;
+}
+
+.elemento:nth-child(5){
+	grid-area: cinque;
+}
+
+.elemento:nth-child(6){
+	grid-area: sei;
+}
+
+@media (min-width: 1440px) {
+	.grid-container {
+		grid-template-areas:
+		"uno uno due tre" 
+		"quattro cinque cinque tre"
+		"sei sei . tre";
+	}
+	
+}
