@@ -1,0 +1,65 @@
+h1 {
+  color: red;
+}
+
+p {
+  color: green;
+}
+
+li {
+/*list-style-type: none;*/
+/*list-style-type: space-co;*/
+/*list-style-type: disc;*/
+/*list-style-type: circle;*/
+  list-style-type: "🔑";
+  list-style-type: decimal;
+  list-style-type: kannada;
+
+/* di più: https://developer.mozilla.org/en-US/docs/Web/CSS/list-style-type */
+}
+
+.special {
+  color: orange;
+  font-weight: bold;
+}
+
+/*  li.special,
+  span.special {
+    color: orange;
+    font-weight: bold;
+  } */
+
+li em { /*  descendant combinator */
+  color: rebeccapurple;
+}
+
+h1 + p {
+  font-size: 200%;
+}
+
+a:link {
+  color: blue;
+  font-weight: bold;
+}
+
+a:visited {
+  color: green;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* selects any <span> that is inside a <p>, which is inside an <article>  */
+article p span {
+}
+
+/* selects any <p> that comes directly after a <ul>, which comes directly after an <h1>  */
+h1 + ul + p {
+}
+
+body h1 + p .special {
+  color: yellow;
+  background-color: black;
+  padding: 5px;
+}
