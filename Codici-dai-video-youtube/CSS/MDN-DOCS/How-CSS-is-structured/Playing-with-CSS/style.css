@@ -1,0 +1,59 @@
+/* Create your test CSS here */
+body {
+  border: 3px solid red;
+  margin: 20px 20px;
+  padding: 20px 20px;
+}
+
+
+p {
+  color: red;
+  border: 3px solid black;
+  padding: 20px 20px;
+  width: 300px;
+  
+  text-align: right;
+}
+
+.special {
+  color: purple;
+}
+
+p {
+  color: red;
+}
+
+p {
+  color: blue;
+  background: purple url(img.png) 10px 10px repeat-x fixed;
+}
+
+.outer {
+  border: 5px solid black;
+}
+
+.box {
+  padding: 15px;
+  width: calc(100% - 50%);
+  background-color: rebeccapurple;
+  color: white;
+}
+
+.quadrato {
+  margin: 30px;
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(to bottom right, #FFC0CB, #FF69B4);
+  transform: rotate(77deg);
+}
+
+body {
+  background-color: yellow;
+}
+
+@media (min-width: 30em) {
+  body {
+    background-color: lime;
+  }
+}
+
