@@ -2,7 +2,7 @@
 <html lang="it">
 	<head>
 		<meta charset="UTF-8">
-		<title>Tabelle</title>
+		<title>Forms and Inputs</title>
 		
 		<style>
 			html {
@@ -13,72 +13,159 @@
 				background-color: black;
 				color: white;
 			}
-			table, tr, th, td, caption {
-				border: 2px solid white;
-				border-collapse: collapse;
-				padding: 0.5rem;
-			}
 		</style>
 		
 	</head>
 	<body>
-		<h1>Tabelle</h1>
+		<h1>Forms and Inputs</h1>
+	
+		<br>
 		
-		<table>
-			<caption>Una tabella senza senso</caption>
-			<thead>
-				<tr>
-					<th>&nbsp;</th>
-					<th scope="col">Tempo</th>
-					<th scope="col">Parola</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">Mattina</th>
-					<td>
-						<time datetime="8:00">8:00</time> -
-						<time datetime="9:00">9:00</time>
-					</td> <!-- table data, table row-->
-					<td>Ciao</td>
-				</tr>
-				<tr>
-					<th scope="row">Pomeriggio</th>
-					<td>
-						<time datetime="10:00">10:00</time> -
-						<time datetime="11:00">11:00</time>
-					</td> <!-- table data, table row-->
-					<td>Ciao</td>
-				</tr>
-				<tr>
-					<th scope="row">Sera</th>
-					<td>
-						<time datetime="12:00">12:00</time> -
-						<time datetime="13:00">13:00</time>
-					</td> <!-- table data, table row-->
-					<td>Ciao</td>
-				</tr>
-				<tr>
-					<th scope="row">Nulla</th>
-					<td colspan="2">CIAO</td>
-				</tr>
-				<tr>
-					<th scope="row">Niente</th>
-					<td rowspan="2">ALTRO</td>
-					<td>Dormo</td>
-				</tr>
-				<tr>
-					<th scope="row">Nulla</th>
-					<td>Non dormo</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td colspan="3">Ciao testo testo testo testo testo testo testo testo testo </td>
-				</tr>
-			</tfoot>
-		</table>
-		
-		
+		<article id="contact">
+			<h2>Contattami</h2>
+			<p>Contattami se hai qualche domanda.</p>
+			
+			<form action="https://httpbin.org/get" method="get">
+				<fieldset>
+					<legend>Informazioni personali</legend>
+				<p>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" placeholder="Antonio" autocomplete="on" required="true" autofocus> <!-- il name è come viene identificato sul lato server, autocomplete funziona quando lo vai a mandare unaltra volta ti sugerisce le stesse info -->
+				</p>
+				<p>
+					<label for="cognome">Cognome:</label>
+					<input type="text" name="cognome" id="cognome" placeholder="Rossi" autocomplete="on" required="true">
+				</p>
+				<p>
+					<label for="telefono">Telefono:</label>
+					<input type="tel" name="telefono" id="telefono" placeholder="+39..."  required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+				</p>
+				<p>
+					<label for="password">Password:</label>
+					<input type="password" name="password" id="password" placeholder="Tuo secreto"  required="true">
+				</p>
+				<p>
+					<label for="decennio">Decennio:</label>
+					<input type="number" name="decennio" id="decennio" min="1950" max="2024" step="10" value="2017" required="false">
+				</p>
+				<p>
+					<label for="caffe">Caffe preferito:</label>
+					<select name="caffe" id="caffe"> <!-- multiple più scelte -->
+						<optgroup label="Caffe">
+							<option value="espresso">Espresso</option>
+							<option value="cappuccino">Cappuccino</option>
+						</optgroup>
+						<optgroup label="Altri">
+							<option value="americano">Americano</option>
+							<option value="macchiato">Macchiato</option>
+							<option value="altro">Altro</option>
+						</optgroup>
+					</select>
+				</p>
+				
+				<p>
+					<label for="caffe">Caffe preferito:</label>
+					<input type="text" name="caffe" id="caffe" list="lista-caffe">
+					<datalist id="lista-caffe">
+						<option value="caffe"></option>
+						<option value="macchiato"></option>
+						<option value="americano"></option>
+						<option value="altro"></option>
+					</datalist>
+				</p>
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Qual è il tuo cibo preferito?</legend>
+					<p>
+						<input type="radio" name="cibo" id="pizze" value="pizze">
+						<label for="pizze">Pizze</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="hamburger" value="hamburger">
+						<label for="gamburger">Hamburger</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="tacos" value="tacos">
+						<label for="tacos">Tacos</label>
+					</p>
+					<p>
+						<input type="radio" name="cibo" id="altro" value="altro">
+						<label for="altro">Altro</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Hai dei animali domestici?</legend> <!-- più scelte a differenza del radio -->
+					<p>
+						<input type="checkbox" name="animali" id="cane" value="cane">
+						<label for="cane">Cane</label>
+					</p>
+					<p>
+						<input type="checkbox" name="animali" id="gatto" value="gatto">
+						<label for="gatto">Gatto</label>
+					</p>
+					<p>
+						<input type="checkbox" name="animali" id="altro" value="altro">
+						<label for="altro">Altro</label>
+					</p>
+				</fieldset>
+				<fieldset>
+					<legend>Mandami una nota</legend>
+					<label for="massage">Tuo messaggio</label>
+					<br>
+					<textarea name="massage" id="message" cols="30" rows="10" placeholder="Scrivi il tuo messaggio qui..."></textarea>
+				</fieldset>
+				<br>
+				<button type="submit">Invia</button>
+				<button type="submit" formaction="https://httpbin.org/post" formmethod="post">Posta</button>
+				<button type="reset">Risetta</button>
+			</form>
+			
+		</article>
+		<footer>
+			<br>
+			<form>
+				<article class="other">
+					
+					<fieldset>
+						<legend>Altro</legend>
+						<p>
+							<label>Cerca</label>
+							<input type="search">
+						</p>
+						<p>
+							<label>Email</label>
+							<input type="email">
+						</p>	
+						<p>
+							<label>Range</label>
+							<input type="range">
+						</p>
+						<p>
+							<label>Url</label>
+							<input type="url">
+						</p>
+						<p>
+							<label>Settimana</label>
+							<input type="week">
+						</p>
+						<p>
+							<label>File</label>
+							<input type="file">
+						</p>
+						<p>
+							<label>Data</label>
+							<input type="date">
+						</p>
+						<p>
+							<label>Colore</label>
+							<input type="color">
+						</p>
+						
+					</fieldset>
+				</article>
+			</form>
+			<p>lista completa:<a href="https://www.w3schools.com/html/html_form_input_types.asp" style="color: red;">https://www.w3schools.com/html/html_form_input_types.asp</a></p>
+		</footer>
 	</body>
 </html>

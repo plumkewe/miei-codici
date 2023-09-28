@@ -2,8 +2,7 @@
 <html lang="it">
 	<head>
 		<meta charset="UTF-8">
-		<title>Organizzazione</title>
-		<meta name="description" content="Come organizzare le pagine in HTML con semantics tags.">
+		<title>Tabelle</title>
 		
 		<style>
 			html {
@@ -14,83 +13,71 @@
 				background-color: black;
 				color: white;
 			}
-			h1 {
-				color: fuchsia;
-			}
-			a {
-				color: aqua;
+			table, tr, th, td, caption {
+				border: 2px solid white;
+				border-collapse: collapse;
+				padding: 0.5rem;
 			}
 		</style>
 		
 	</head>
 	<body>
-		<header>
-			<h1>Organizzazione</h1>
-			
-			<hr>
-			<nav aria-label="primary-navigation">
-		<!--	<nav aria-labelledby="primary-navigation"> -->
-			<!--	<h2 id="primary-navigation">Primary navigation</h2> -->
-				<ul>
-					<a href="#articoli">Articoli</a>
-				</ul>
-				
-				<ul>
-					<a href="google.com">ciao</a>
-				</ul>
-			</nav>
-			<hr>
-			
-		</header>
+		<h1>Tabelle</h1>
 		
-		<p>nav(navigazione), hr(nuova sezione), h1(title), main, header, footer, section... lo sono. invece il DIV non ha senso serve solo per "dividere" ed è un blocco stessa cosa va per SPAN (si usano in css)</p>
-		
-		<br>
-		
-		<main>
-			<article id="articoli">
-			<!-- <section id="articoli"> -->
-				
-			<h2>I nostri articoli:</h2>
-			
-				<section>
-					<h3>Gatto che mangia</h3>
-					<p>È un bravo gatto, che mangia un cibo delizioso... leggi di più</p>
-				</section>
-				
-				<section>
-					<br>
-					
-					<h3>Gatto che Beve</h3>
-					<p>Il gatto non solo mangia ma anche beve...</p>
-					
-					<br>
-					
-					<aside>
-						<details>
-							<summary>Indovina quanti <mark>video</mark> mi guardo in una settimana?</summary>
-							<p>Da lunedì a venerdì dalle <time datetime="13:00">13:00</time></p> <!-- per accessibilità per le ore si usa datetima="PT3H"(PER TRE ORE) -->
-						</details>
-					</aside>
-				
-				</section>
-				
-				
-				
-			<!-- </section> -->
-			</article> <!-- si usano gli articli per dei topic specifici si usa le section per delle cose più generiche, per una divisone più genreica -->
-		</main>
-		
-		<footer>
-			
-			<br>
-			<br>
-			
-			<p><strong>&copy; Pimply all right reserved.</strong> <br>
-				follow me on: instagram - twitter - youtube
-			</p>
-			
-		</footer>
+		<table>
+			<caption>Una tabella senza senso</caption>
+			<thead>
+				<tr>
+					<th>&nbsp;</th>
+					<th scope="col">Tempo</th>
+					<th scope="col">Parola</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<th scope="row">Mattina</th>
+					<td>
+						<time datetime="8:00">8:00</time> -
+						<time datetime="9:00">9:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Pomeriggio</th>
+					<td>
+						<time datetime="10:00">10:00</time> -
+						<time datetime="11:00">11:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Sera</th>
+					<td>
+						<time datetime="12:00">12:00</time> -
+						<time datetime="13:00">13:00</time>
+					</td> <!-- table data, table row-->
+					<td>Ciao</td>
+				</tr>
+				<tr>
+					<th scope="row">Nulla</th>
+					<td colspan="2">CIAO</td>
+				</tr>
+				<tr>
+					<th scope="row">Niente</th>
+					<td rowspan="2">ALTRO</td>
+					<td>Dormo</td>
+				</tr>
+				<tr>
+					<th scope="row">Nulla</th>
+					<td>Non dormo</td>
+				</tr>
+			</tbody>
+			<tfoot>
+				<tr>
+					<td colspan="3">Ciao testo testo testo testo testo testo testo testo testo </td>
+				</tr>
+			</tfoot>
+		</table>
 		
 		
 	</body>
