@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+	<head>
+		<meta charset="UTF-8">
+		<title>Position</title>
+		
+		<style>
+			/* classic page style */
+			html {
+				font-size: 21px;
+				font-family: sans-serif;
+			}
+			body {
+				background-color: black;
+				color: white;
+			}
+			
+		   /*			*/
+			
+			.uno {
+				background-color: lime;
+			}
+			.due {
+				background-color: red;
+			}
+			.tre {
+				background-color: navy;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1>Postion</h1>
+		</header>
+		
+		
+		
+		<article>
+			<h3>Static</h3>
+			<p>Di base, è static.</p>
+			<div class="uno">Uno</div>
+			<div class="due">Due</div>
+			<div class="tre">Tre</div>
+			
+		</article>
+		<article>
+			<h3>Relative</h3>
+			<p>È come static MA permette di manipulare la sua posizione in 4 direzioni <u>relativi alla sua posizione.</u></p>
+			<div class="uno">Uno</div>
+			<div class="due" style="position: relative; left: 21px; top: 30px;">Due</div>
+			<div class="tre">Tre</div>
+			
+		</article>
+		<article>
+			<h3>Absolute</h3>
+			<p>Spinge fuori dalla struttura elemento facendo finta che non esistesse proprio, ciò sta a dire che con absolute si può spostare un elemento che avrà delle modifiche sui altri, ma non sulla circostanza. Si sposta riferendosi al file e non alla posizione del elemento. Ma con un parental element con la posizione qualsiasi ma diversa da static di cui lui farà da child element, può essere usata per attaccare l'elemento absolute ad esso.</p>
+			<div class="uno">Uno</div>
+			<div class="due" style="position: absolute; top: 21px;">Due absolosute</div>
+			<div class="tre">Tre</div>
+			
+		</article>
+		<article>
+			<h3>Fixed</h3>
+			<p>La sua posizione è relativa al intera pagina html, e nel mentre la si score elemento rimane immobile.</p>
+			<div class="uno">Uno</div>
+			<div class="due" style="position: fixed; top: 210px; left: 100px; font-size: 100px; background-color: purple;">Due fixed</div>
+			<div class="tre">Tre</div>
+			
+		</article>
+		<article>
+			<h3>Sticky</h3>
+			<div class="uno">Uno</div>
+			<div class="due" style="position: sticky; top: 0px;">Due sticky</div>
+			<div class="tre">Tre</div>
+			<div class="tre">Quattro</div>
+			<div class="tre" style="position: sticky; top: 0px; background-color:blue">Cinque</div>
+			<div class="tre">Sei</div>
+			<div class="tre">Sette</div>
+			
+		</article>
+		
+		
+		
+		<footer>
+			<p style="height: 1000px;"></p>
+		</footer>
+	</body>
+</html>
